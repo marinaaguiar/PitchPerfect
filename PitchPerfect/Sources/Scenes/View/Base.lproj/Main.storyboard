@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,64 +81,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-xH-SdZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-xH-SdZ">
+                                <rect key="frame" x="16" y="88" width="382" height="686"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3MV-tD-vLi">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3MV-tD-vLi">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="223.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-6m-hEX">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-6m-hEX" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="223.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="Slow"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Slow" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnz-eG-e5j">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnz-eG-e5j" userLabel="Fast Button">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="223.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="Fast"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Fast" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f8h-Ii-eWd">
-                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f8h-Ii-eWd">
+                                        <rect key="frame" x="0.0" y="231.5" width="382" height="223"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-4X-p8x">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-4X-p8x" userLabel="High Pitch Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="223"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="HighPitch" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-oH-2Jp">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-oH-2Jp" userLabel="Low Pitch Button">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="223"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="LowPitch" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pS1-pR-GcG">
-                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pS1-pR-GcG">
+                                        <rect key="frame" x="0.0" y="462.5" width="382" height="223.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pav-AZ-0w8">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pav-AZ-0w8" userLabel="Reverb Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="223.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Reverb" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-W7-MeS">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-W7-MeS" userLabel="Echo Button">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="223.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="Echo"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Echo" imageContentMode="center"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtv-sc-5AB">
+                                <rect key="frame" x="175" y="782" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="2no-W7-kwN"/>
+                                    <constraint firstAttribute="width" constant="64" id="XGP-1u-LOV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Stop" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NN1-FI-xex"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NN1-FI-xex" firstAttribute="bottom" secondItem="3K5-xH-SdZ" secondAttribute="bottom" id="E6U-oL-ZeN"/>
                             <constraint firstItem="3K5-xH-SdZ" firstAttribute="top" secondItem="NN1-FI-xex" secondAttribute="top" id="FGP-ew-COO"/>
-                            <constraint firstItem="3K5-xH-SdZ" firstAttribute="leading" secondItem="NN1-FI-xex" secondAttribute="leading" id="lNI-8b-796"/>
-                            <constraint firstItem="NN1-FI-xex" firstAttribute="trailing" secondItem="3K5-xH-SdZ" secondAttribute="trailing" id="qoY-Lb-z95"/>
+                            <constraint firstItem="Jtv-sc-5AB" firstAttribute="top" secondItem="3K5-xH-SdZ" secondAttribute="bottom" constant="8" id="G8O-RV-XVk"/>
+                            <constraint firstItem="NN1-FI-xex" firstAttribute="bottom" secondItem="Jtv-sc-5AB" secondAttribute="bottom" constant="16" id="OG1-aZ-4Sg"/>
+                            <constraint firstItem="3K5-xH-SdZ" firstAttribute="leading" secondItem="NN1-FI-xex" secondAttribute="leading" constant="16" id="lNI-8b-796"/>
+                            <constraint firstItem="Jtv-sc-5AB" firstAttribute="centerX" secondItem="nDb-I1-voJ" secondAttribute="centerX" id="mEv-03-cvb"/>
+                            <constraint firstItem="NN1-FI-xex" firstAttribute="trailing" secondItem="3K5-xH-SdZ" secondAttribute="trailing" constant="16" id="qoY-Lb-z95"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fpi-Cy-qH0"/>
