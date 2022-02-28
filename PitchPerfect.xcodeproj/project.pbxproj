@@ -56,15 +56,71 @@
 		9C9B93C127C9318900084246 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				9C9B93C227C9318900084246 /* AppDelegate.swift */,
-				9C9B93C427C9318900084246 /* SceneDelegate.swift */,
-				9C9B93C627C9318900084246 /* ViewController.swift */,
-				9C9B93C827C9318900084246 /* Main.storyboard */,
+				9C9B93D727CCD7F100084246 /* Resources */,
+				9C9B93D627CCD7E800084246 /* Sources */,
+			);
+			path = PitchPerfect;
+			sourceTree = "<group>";
+		};
+		9C9B93D627CCD7E800084246 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93D827CCD8A500084246 /* Scenes */,
+				9C9B93DA27CCD8DD00084246 /* SceneDelegate */,
+				9C9B93D927CCD8D400084246 /* AppDelegate */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9C9B93D727CCD7F100084246 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9C9B93CB27C9318B00084246 /* Assets.xcassets */,
 				9C9B93CD27C9318B00084246 /* LaunchScreen.storyboard */,
 				9C9B93D027C9318B00084246 /* Info.plist */,
 			);
-			path = PitchPerfect;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C9B93D827CCD8A500084246 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93DC27CCD8FA00084246 /* ViewController */,
+				9C9B93DB27CCD8F100084246 /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9C9B93D927CCD8D400084246 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93C227C9318900084246 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9C9B93DA27CCD8DD00084246 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93C427C9318900084246 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		9C9B93DB27CCD8F100084246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93C827C9318900084246 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C9B93DC27CCD8FA00084246 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B93C627C9318900084246 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DSYB3VSYU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				INFOPLIST_FILE = PitchPerfect/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DSYB3VSYU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				INFOPLIST_FILE = PitchPerfect/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
